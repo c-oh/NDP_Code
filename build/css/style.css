@@ -78,11 +78,13 @@ header {
 .boxes-container .boxes {
   text-align: center;
   height: 291px;
-  -webkit-box-shadow: inset 0 -1px 0 #d3d3d3; }
+  -webkit-box-shadow: inset 0 -1px 0 #d3d3d3;
+  margin: 0 5px; }
   @media (min-width: 760px) {
     .boxes-container .boxes {
       width: 50%;
-      -webkit-box-shadow: inset -1px 0 0 #d3d3d3; } }
+      -webkit-box-shadow: inset -1px 0 0 #d3d3d3;
+      margin: 0; } }
   @media (min-width: 1024px) {
     .boxes-container .boxes {
       width: 25%;
@@ -97,7 +99,7 @@ header {
     width: 44%;
     line-height: 1.3rem; }
   .boxes-container .boxes p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: #708090;
     font-weight: 100;
     line-height: 1.6rem; }
