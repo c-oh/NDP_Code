@@ -56,9 +56,6 @@ header {
             margin: auto;
             width: 183px;
             line-height: 1.3rem;
-            @include desktop{
-                width: 57%;
-            }
         }
         p {
             font-size: 0.8rem;
