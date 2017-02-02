@@ -81,6 +81,9 @@ header {
   @media (min-width: 760px) {
     .boxes-container .boxes {
       width: 50%; } }
+  @media (min-width: 1024px) {
+    .boxes-container .boxes {
+      width: 25%; } }
   .boxes-container .boxes img {
     width: 150px;
     height: 150px;

@@ -25,6 +25,9 @@ header {
     @include tablet{
         width: 50%;
     }
+    @include desktop{
+        width: 25%;
+    }
     img {
         width: $img__size;
         height: $img__size;
