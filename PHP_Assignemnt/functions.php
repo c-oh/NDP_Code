@@ -18,8 +18,8 @@ print "Loading...\n";
 }
 // convert array to match structure in "correct-output.json"
 function convert_array_to_output_format($input_array) {
-  #assigning a variable the value of an empty array
-  $output_array = array();
+  #assigning a variable the value of an empty array, using PHP5.4's shortcut
+  $output_array = [];
   print "Converting...\n";  
 
 
