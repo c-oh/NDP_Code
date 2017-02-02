@@ -19,9 +19,11 @@ print "Loading...\n";
 // convert array to match structure in "correct-output.json"
 function convert_array_to_output_format($input_array) {
   #assigning a variable the value of an empty array, using PHP5.4's shortcut
-  $output_array = [];
+  $input_array = [];
   print "Converting...\n";  
-
+  # Making something show up after the function is run
+$output = json_encode($output_array);
+return $output;
 
 }
 // save the array to file named "my-output.json" 
