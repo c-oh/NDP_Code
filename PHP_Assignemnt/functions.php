@@ -19,6 +19,8 @@ print "Loading...\n";
 function convert_array_to_output_format($input_array) {
   #assigning a variable the value of an empty array, using PHP5.4's shortcut
   $input_array = [];
+  #Assigning each bird a value
+  $item = 0;
   #foreach loops only works with objects or arrays
   foreach($input_array['birds'] as $birds){};
   print "Converting...\n";  
