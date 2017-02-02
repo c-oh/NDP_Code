@@ -36,6 +36,7 @@ header {
         text-align: center;
         -webkit-box-shadow: inset 0 -1px 0 $lightgray, ;
         margin: 0 5px;
+        height:auto;
         @include tablet {
             width: 50%;
             -webkit-box-shadow: inset -1px 0 0 $lightgray, ;
@@ -44,7 +45,6 @@ header {
         @include desktop {
             width: 25%;
             -webkit-box-shadow: inset 0 -1px 0 $lightgray, inset -1px 0 0 $lightgray, ;
-            height: 352px;
         }
         img {
             width: 40%;
@@ -70,7 +70,7 @@ header {
                 font-size:0.85rem;
             }
             @include desktop {
-                padding: 0 12px;
+                padding: 0 12px 26px;
                 font-size:1rem;
             }
         }
