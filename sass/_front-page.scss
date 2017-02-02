@@ -7,7 +7,7 @@ header {
     h1 {
         padding-bottom: 10px;
         padding-top: 36px;
-        @include desktop{
+        @include desktop {
             font-size: 2rem;
         }
     }
@@ -20,7 +20,7 @@ header {
             margin: auto;
             font-size: 1.3rem;
         }
-        @include desktop{
+        @include desktop {
             width: 60%;
             font-size: 1.5rem;
         }
@@ -44,8 +44,8 @@ header {
         }
         @include desktop {
             width: 25%;
-            -webkit-box-shadow: inset 0 -1px 0 $lightgray, inset -1px 0 0 $lightgray,;
-                height: 370px;
+            -webkit-box-shadow: inset 0 -1px 0 $lightgray, inset -1px 0 0 $lightgray, ;
+            height: 370px;
         }
         img {
             width: $img__size;
@@ -57,13 +57,16 @@ header {
             margin: auto;
             width: 44%;
             line-height: 1.3rem;
+            @include desktop{
+                width: 57%;
+            }
         }
         p {
             font-size: 0.7rem;
             color: $descriptiongray;
             font-weight: 100;
             line-height: $line_height_font;
-            @include desktop{
+            @include desktop {
                 padding: 0 12px;
                 font-size: 1rem;
             }

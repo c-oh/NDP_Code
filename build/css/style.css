@@ -112,6 +112,9 @@ header {
     margin: auto;
     width: 44%;
     line-height: 1.3rem; }
+    @media (min-width: 1024px) {
+      .boxes-container .boxes h3 {
+        width: 57%; } }
   .boxes-container .boxes p {
     font-size: 0.7rem;
     color: #708090;
