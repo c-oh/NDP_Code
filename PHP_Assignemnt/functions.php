@@ -29,7 +29,7 @@ function convert_array_to_output_format($input_array) {
         'name' => $data['EnglishName'],
         'latin' => $data['Species'],
         'lifespan' => $data['Lifespan']);
-  }}
+  }
     #Post-incrementing the var so the function will keep on running until it reaches last object
   $item++;
   };
