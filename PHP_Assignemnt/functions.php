@@ -11,6 +11,7 @@ function load_input_file_into_php_array() {
 $file_string = file_get_contents("/data/input.json");
 $file_array = json_decode($file_string, true);
   print "Loading...\n";
+  return $file_array;
 
 
 }
