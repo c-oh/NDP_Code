@@ -55,21 +55,23 @@ table {
   font-weight: normal;
   font-style: bold; }
 
-html {
+body {
   background-color: #f1f2f2;
   font-family: open_sansregular, sans-serif; }
 
 header {
   text-align: center;
   font-size: 1.6rem;
-  font-weight: 100; }
+  font-weight: 100;
+  height: 175px; }
   header p {
     font-size: 1rem;
     color: #808080; }
 
 .boxes {
   text-align: center;
-  border-top: 1px solid #d3d3d3; }
+  border-top: 1px solid #d3d3d3;
+  height: 300px; }
   .boxes img {
     width: 150px;
     height: 150px; }
