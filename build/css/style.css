@@ -61,9 +61,10 @@ header {
   header p {
     font-size: 1rem; }
 
-.boxes img {
-  width: 150px;
-  height: 150px; }
-
-.boxes p {
-  font-size: 0.9rem; }
+.boxes {
+  text-align: center; }
+  .boxes img {
+    width: 150px;
+    height: 150px; }
+  .boxes p {
+    font-size: 0.9rem; }
