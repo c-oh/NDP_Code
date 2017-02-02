@@ -11,7 +11,6 @@ function load_input_file_into_php_array() {
 $file_string = file_get_contents("data/input.json");
 #Adding true will ensure objects are changed to associative arrays
 $file_array = json_decode($file_string, true);
-
   #Prints out a message to the command line when function is excecuted
 print "Loading...\n";
 #Returning the variable will prevent a value of "null" showing up
@@ -25,7 +24,7 @@ function convert_array_to_output_format($input_array) {
   #Assigning each bird a value
   $item = 0;
   #foreach loop ensures that function is applied to every value in the array
-  foreach($input_array['birds'] as &$otherbird){
+  foreach($input_array['birds'] as $otherbird){
     #second foreach loop ensures the values in the bird array is addressed and changed, and loops through while setting new key and unsetting the old one
     foreach($otherbird as $data){
   $output_array[$item] = array(
