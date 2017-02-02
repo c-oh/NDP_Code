@@ -127,7 +127,8 @@ header {
     @media (min-width: 1024px) {
       .boxes-container .boxes p {
         padding: 0 12px 26px;
-        font-size: 1rem; } }
+        font-size: 1rem;
+        margin: 0; } }
 
 .clock h3 {
   width: 214px; }
