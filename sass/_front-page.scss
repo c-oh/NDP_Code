@@ -34,7 +34,6 @@ header {
     }
     .boxes {
         text-align: center;
-        height: 291px;
         -webkit-box-shadow: inset 0 -1px 0 $lightgray, ;
         margin: 0 5px;
         @include tablet {
@@ -48,24 +47,25 @@ header {
             height: 352px;
         }
         img {
-            width: $img__size;
-            height: $img__size;
+            width: 40%;
+            height: auto;
             padding: 26px;
         }
         h3 {
             font-size: 0.85rem;
             margin: auto;
-            width: 44%;
+            width: 183px;
             line-height: 1.3rem;
             @include desktop{
                 width: 57%;
             }
         }
         p {
-            font-size: 0.7rem;
+            font-size: 0.8rem;
             color: $descriptiongray;
             font-weight: 100;
             line-height: $line_height_font;
+            padding-bottom: 26px;
             @include tablet{
                 font-size:0.85rem;
             }
@@ -78,5 +78,5 @@ header {
 }
 
 .clock h3 {
-    width: 60%;
+    width: 214px;
 }
