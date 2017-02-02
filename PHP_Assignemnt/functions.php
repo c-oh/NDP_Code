@@ -21,8 +21,14 @@ function convert_array_to_output_format($input_array) {
   $input_array = [];
   #Assigning each bird a value
   $item = 0;
-  #foreach loops only works with objects or arrays
   foreach($input_array['birds'] as $birds){
+    for($birds as $data){
+      $output_array[$item] = [
+        'name' => $data['EnglishName'],
+        'latin' => $data['Species'],
+        'lifespan' => $data['Livespan']
+      ]
+    }
     #Post-incrementing the var
     $item++;
   };
