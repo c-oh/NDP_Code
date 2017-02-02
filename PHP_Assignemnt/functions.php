@@ -8,7 +8,7 @@
 // read from "input.json" and return as an array
 function load_input_file_into_php_array() {
 #This shows the file the directory of the data info
-$file_string = file_get_contents("/data/input.json");
+$file_string = file_get_contents("data/input.json");
 #Adding true will ensure objects are changed to associative arrays
 $file_array = json_decode($file_string, true);
 #Returning the variable will prevent a value of "null" showing up
@@ -26,7 +26,7 @@ function convert_array_to_output_format($input_array) {
        $output_array[$counter] = array(
         'name' => $data['EnglishName'],
         'latin' => $data['Species'],
-        'lifespan' => $data['Livespan']);
+        'lifespan' => $data['Lifespan']);
 }
    
     #Post-incrementing the var so the function will keep on running until it reaches last object
