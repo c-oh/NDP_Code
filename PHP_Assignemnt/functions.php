@@ -21,14 +21,14 @@ function convert_array_to_output_format($input_array) {
   $input_array = [];
   #Assigning each bird a value
   $item = 0;
-  foreach($input_array['birds'] as $birds){
-    for($birds as $data){
-      $output_array[$item] = [
+  foreach($input_array['birds'] as &$birds){
+    foreach($birds as $data)[]
+      $output_array[$item] = array(
         'name' => $data['EnglishName'],
         'latin' => $data['Species'],
         'lifespan' => $data['Livespan']
-      ]
-    }
+      );
+}
     #Post-incrementing the var so the function will keep on running until it reaches last object
     $item++;
   };
