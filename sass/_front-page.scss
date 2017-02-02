@@ -1,3 +1,7 @@
+html{
+    background-color:$background;
+}
+
 header {
     text-align: center;
     font-size: 1.8rem;
@@ -16,5 +20,6 @@ img{
 }
 p{
     font-size: 0.9rem;
+    color: $descriptiongray;
 }
 }

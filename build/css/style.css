@@ -55,6 +55,9 @@ table {
   font-weight: normal;
   font-style: bold; }
 
+html {
+  background-color: #f1f2f2; }
+
 header {
   text-align: center;
   font-size: 1.8rem; }
@@ -69,4 +72,5 @@ header {
     width: 150px;
     height: 150px; }
   .boxes p {
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+    color: #708090; }
