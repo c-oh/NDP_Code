@@ -60,3 +60,7 @@ header {
   font-size: 1.8rem; }
   header p {
     font-size: 1rem; }
+
+img {
+  width: 150px;
+  height: 150px; }
