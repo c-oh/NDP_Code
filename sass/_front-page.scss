@@ -3,7 +3,7 @@ header {
     font-size: $line_height_font;
     font-weight: 100;
     height: 175px;
-    h1{
+    h1 {
         padding-bottom: 10px;
     }
     p {
@@ -13,44 +13,44 @@ header {
     }
 }
 
-.boxes-container{
-    @include tablet{
-    display: flex;
-    flex-wrap: wrap;
+.boxes-container {
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
     }
-.boxes {
-    text-align: center;
-    height: 291px;
-    -webkit-box-shadow:
-     inset -1px 0   0 $lightgray,
-     inset 0 1px 0 $lightgray,
-     inset 0 -1px 0 $lightgray,;
-    @include tablet{
-        width: 50%;
+    .boxes {
+        text-align: center;
+        height: 291px;
+        -webkit-box-shadow: inset -1px 0 0 $lightgray, inset 0 1px 0 $lightgray, ;
+        @include tablet {
+            width: 50%;
+            -webkit-box-shadow: inset -1px 0 0 $lightgray, inset 0 1px 0 $lightgray, ;
+        }
+        @include desktop {
+            width: 25%;
+            -webkit-box-shadow: inset 0 -1px 0 $lightgray, inset -1px 0 0 $lightgray, inset 0 1px 0 $lightgray, ;
+            ;
+        }
+        img {
+            width: $img__size;
+            height: $img__size;
+            padding: 26px;
+        }
+        h3 {
+            font-size: 0.85rem;
+            margin: auto;
+            width: 44%;
+            line-height: 1.3rem;
+        }
+        p {
+            font-size: 0.8rem;
+            color: $descriptiongray;
+            font-weight: 100;
+            line-height: $line_height_font;
+        }
     }
-    @include desktop{
-        width: 25%;
-    }
-    img {
-        width: $img__size;
-        height: $img__size;
-        padding: 26px;
-    }
-    h3{
-        font-size:0.85rem;
-        margin:auto;
-        width: 44%;
-        line-height:1.3rem;
-    }
-    p {
-        font-size: 0.8rem;
-        color: $descriptiongray;
-        font-weight: 100;
-        line-height: $line_height_font;
-    }
-}
 }
 
-.clock h3{
-width:60%;
+.clock h3 {
+    width: 60%;
 }
