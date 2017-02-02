@@ -59,7 +59,8 @@ header {
   text-align: center;
   font-size: 1.6rem;
   font-weight: 100;
-  height: 175px; }
+  height: 175px;
+  border-bottom: solid 1px #d3d3d3; }
   header h1 {
     padding-bottom: 10px; }
   header p {
@@ -77,15 +78,15 @@ header {
 .boxes-container .boxes {
   text-align: center;
   height: 291px;
-  -webkit-box-shadow: inset -1px 0 0 #d3d3d3, inset 0 1px 0 #d3d3d3; }
+  -webkit-box-shadow: inset 0 -1px 0 #d3d3d3; }
   @media (min-width: 760px) {
     .boxes-container .boxes {
       width: 50%;
-      -webkit-box-shadow: inset -1px 0 0 #d3d3d3, inset 0 1px 0 #d3d3d3; } }
+      -webkit-box-shadow: inset -1px 0 0 #d3d3d3; } }
   @media (min-width: 1024px) {
     .boxes-container .boxes {
       width: 25%;
-      -webkit-box-shadow: inset 0 -1px 0 #d3d3d3, inset -1px 0 0 #d3d3d3, inset 0 1px 0 #d3d3d3; } }
+      -webkit-box-shadow: inset 0 -1px 0 #d3d3d3, inset -1px 0 0 #d3d3d3; } }
   .boxes-container .boxes img {
     width: 150px;
     height: 150px;

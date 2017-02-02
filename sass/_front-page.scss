@@ -3,6 +3,7 @@ header {
     font-size: $line_height_font;
     font-weight: 100;
     height: 175px;
+    border-bottom: solid 1px $lightgray;
     h1 {
         padding-bottom: 10px;
     }
@@ -21,15 +22,14 @@ header {
     .boxes {
         text-align: center;
         height: 291px;
-        -webkit-box-shadow: inset -1px 0 0 $lightgray, inset 0 1px 0 $lightgray, ;
+        -webkit-box-shadow: inset 0 -1px 0 $lightgray, ;
         @include tablet {
             width: 50%;
-            -webkit-box-shadow: inset -1px 0 0 $lightgray, inset 0 1px 0 $lightgray, ;
+            -webkit-box-shadow: inset -1px 0 0 $lightgray,
         }
         @include desktop {
             width: 25%;
-            -webkit-box-shadow: inset 0 -1px 0 $lightgray, inset -1px 0 0 $lightgray, inset 0 1px 0 $lightgray, ;
-            ;
+            -webkit-box-shadow: inset 0 -1px 0 $lightgray, inset -1px 0 0 $lightgray, ;
         }
         img {
             width: $img__size;
