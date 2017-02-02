@@ -62,7 +62,8 @@ header {
     font-size: 1rem; }
 
 .boxes {
-  text-align: center; }
+  text-align: center;
+  border-top: 1px solid #d3d3d3; }
   .boxes img {
     width: 150px;
     height: 150px; }
