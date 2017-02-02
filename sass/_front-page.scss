@@ -1,6 +1,7 @@
 body {
     background-color: $background;
     font-family: $font__main;
+    margin:0 10px;
 }
 
 header {
@@ -35,4 +36,8 @@ header {
         font-weight: 100;
         line-height: 1.6rem;
     }
+}
+
+.clock h3{
+width:60%;
 }

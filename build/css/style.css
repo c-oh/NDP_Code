@@ -57,7 +57,8 @@ table {
 
 body {
   background-color: #f1f2f2;
-  font-family: open_sansregular, sans-serif; }
+  font-family: open_sansregular, sans-serif;
+  margin: 0 10px; }
 
 header {
   text-align: center;
@@ -86,3 +87,11 @@ header {
     color: #708090;
     font-weight: 100;
     line-height: 1.6rem; }
+
+.clock h3 {
+  width: 60%; }
+
+body {
+  background-color: #f1f2f2;
+  font-family: open_sansregular, sans-serif;
+  margin: 0 10px; }
