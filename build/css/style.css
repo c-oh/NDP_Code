@@ -54,3 +54,9 @@ table {
   src: url("../../assets/fonts/OpenSans-Bold/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/OpenSans-Bold/OpenSans-Bold-webfont.woff") format("woff"), url("../../assets/fonts/OpenSans-Bold/OpenSans-Bold-webfont.ttf") format("truetype"), url("../../assets/fonts/OpenSans-Bold/OpenSans-Bold-webfont.svg#open_sansbold") format("svg");
   font-weight: normal;
   font-style: bold; }
+
+header {
+  text-align: center;
+  font-size: 1.8rem; }
+  header p {
+    font-size: 1rem; }
