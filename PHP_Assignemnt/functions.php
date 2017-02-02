@@ -22,7 +22,10 @@ function convert_array_to_output_format($input_array) {
   #Assigning each bird a value
   $item = 0;
   #foreach loops only works with objects or arrays
-  foreach($input_array['birds'] as $birds){};
+  foreach($input_array['birds'] as $birds){
+    #Post-incrementing the var
+    $item++;
+  };
   print "Converting...\n";  
   # Making something show up after the function is run
 $output = json_encode($output_array);
