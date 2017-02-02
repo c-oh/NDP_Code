@@ -2,4 +2,7 @@ body {
     background-color: $background;
     font-family: $font__main;
     margin:0 10px;
+    @include tablet{
+        margin:0;
+    }
 }

@@ -80,10 +80,12 @@ header {
   height: 291px; }
   @media (min-width: 760px) {
     .boxes-container .boxes {
-      width: 50%; } }
+      width: 50%;
+      -webkit-box-shadow: inset -1px 0 0 #d3d3d3, inset 0 -1px 0 #d3d3d3; } }
   @media (min-width: 1024px) {
     .boxes-container .boxes {
-      width: 25%; } }
+      width: 25%;
+      -webkit-box-shadow: inset -1px 0 0 #d3d3d3, inset 0 -1px 0 #d3d3d3; } }
   .boxes-container .boxes img {
     width: 150px;
     height: 150px;
@@ -106,3 +108,6 @@ body {
   background-color: #f1f2f2;
   font-family: open_sansregular, sans-serif;
   margin: 0 10px; }
+  @media (min-width: 760px) {
+    body {
+      margin: 0; } }
