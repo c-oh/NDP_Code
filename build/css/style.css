@@ -71,6 +71,9 @@ header {
   text-align: center;
   border-top: 1px solid #d3d3d3;
   height: 291px; }
+  @media (min-width: 760px) {
+    .boxes {
+      width: 50%; } }
   .boxes img {
     width: 150px;
     height: 150px;

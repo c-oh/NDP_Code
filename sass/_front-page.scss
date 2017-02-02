@@ -13,10 +13,14 @@ header {
     }
 }
 
+
 .boxes {
     text-align: center;
     border-top: 1px solid $lightgray;
     height: 291px;
+    @include tablet{
+        width: 50%;
+    }
     img {
         width: $img__size;
         height: $img__size;
