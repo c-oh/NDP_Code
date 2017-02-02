@@ -76,7 +76,12 @@ header {
     width: 150px;
     height: 150px;
     padding: 26px; }
+  .boxes h3 {
+    font-size: 0.9rem;
+    margin: auto;
+    width: 40%; }
   .boxes p {
     font-size: 0.8rem;
     color: #708090;
-    font-weight: 100; }
+    font-weight: 100;
+    line-height: 26px; }
