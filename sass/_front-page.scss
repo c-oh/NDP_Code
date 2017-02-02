@@ -13,7 +13,11 @@ header {
     }
 }
 
-
+.boxes-container{
+    @include tablet{
+    display: flex;
+    flex-wrap: wrap;
+    }
 .boxes {
     text-align: center;
     border-top: 1px solid $lightgray;
@@ -38,6 +42,7 @@ header {
         font-weight: 100;
         line-height: $line_height_font;
     }
+}
 }
 
 .clock h3{
