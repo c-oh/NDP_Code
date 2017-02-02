@@ -22,6 +22,7 @@ function convert_array_to_output_format($input_array) {
 }
 // save the array to file named "my-output.json" 
 function save_php_array_to_output_file($output_array) {
+  file_put_contents('my-output.json', $output_array);
   print "Saving...\n";    
 
 
