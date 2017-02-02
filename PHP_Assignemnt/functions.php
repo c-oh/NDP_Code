@@ -23,7 +23,7 @@ function convert_array_to_output_format($input_array) {
   $item = 0;
   foreach($input_array['birds'] as &$birds){
     foreach($birds as $data)[]
-      $output_array[$item] = array(
+       $output_array[$counter] = array(
         'name' => $data['EnglishName'],
         'latin' => $data['Species'],
         'lifespan' => $data['Livespan']
