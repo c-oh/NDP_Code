@@ -11,10 +11,11 @@ function load_input_file_into_php_array() {
 $file_string = file_get_contents("data/input.json");
 #Adding true will ensure objects are changed to associative arrays
 $file_array = json_decode($file_string, true);
-#Returning the variable will prevent a value of "null" showing up
-  return $file_array;
+
   #Prints out a message to the command line when function is excecuted
 print "Loading...\n";
+#Returning the variable will prevent a value of "null" showing up
+  return $file_array;
 }
 
 // convert array to match structure in "correct-output.json"
@@ -25,9 +26,9 @@ function convert_array_to_output_format($input_array) {
   $item = 0;
   #foreach loop ensures that function is applied to every value in the array
   foreach($input_array['birds'] as &$otherbird){
-    #second foreach loop ensures the values in the bird array is addressed and changed
+    #second foreach loop ensures the values in the bird array is addressed and changed, and loops through while setting new key and unsetting the old one
     foreach($otherbird as $data){
-       $output_array[$item] = array(
+  $output_array[$item] = array(
         'name' => $data['EnglishName'],
         'latin' => $data['Species'],
         'lifespan' => $data['Lifespan']);
@@ -39,6 +40,7 @@ function convert_array_to_output_format($input_array) {
   print "Converting...\n";  
   #Assigning the return of results in json, and addressing it to a var
 $output = json_encode($output_array);
+#ensures data is returned as a value
 return $output;
 
 }
