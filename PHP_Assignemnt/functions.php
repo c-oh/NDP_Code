@@ -37,7 +37,7 @@ function convert_array_to_output_format($input_array) {
   };
   #Prints out a message to the command line when function is excecuted
   print "Converting...\n";  
-  # Making something show up after the function is run
+  #Assigning the return of results in json, and addressing it to a var
 $output = json_encode($output_array);
 return $output;
 
