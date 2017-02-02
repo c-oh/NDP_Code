@@ -23,7 +23,9 @@ function convert_array_to_output_format($input_array) {
   $output_array = [];
   #Assigning each bird a value
   $item = 0;
+  #foreach loop ensures that function is applied to every value in the array
   foreach($input_array['birds'] as &$otherbird){
+    #second foreach loop ensures the values in the bird array is addressed and changed
     foreach($otherbird as $data){
        $output_array[$item] = array(
         'name' => $data['EnglishName'],
