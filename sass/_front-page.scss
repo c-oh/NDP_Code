@@ -6,8 +6,12 @@ header {
     }
 }
 
-
+.boxes{
 img{
     width: $img__size;
     height: $img__size;
+}
+p{
+    font-size: 0.9rem;
+}
 }
