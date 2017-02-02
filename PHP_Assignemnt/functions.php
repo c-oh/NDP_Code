@@ -23,15 +23,15 @@ function convert_array_to_output_format($input_array) {
   $output_array = [];
   #Assigning each bird a value
   $item = 0;
-  foreach($input_array['birds'] as $birds){
-    foreach($birds as $data){
-       $output_array[$counter] = array(
+  foreach($input_array['birds'] as &$otherbird){
+    foreach($otherbird as $data){
+       $output_array[$item] = array(
         'name' => $data['EnglishName'],
         'latin' => $data['Species'],
         'lifespan' => $data['Lifespan']);
-}
+  }}
     #Post-incrementing the var so the function will keep on running until it reaches last object
-         $item++;
+  $item++;
   };
   #Prints out a message to the command line when function is excecuted
   print "Converting...\n";  
