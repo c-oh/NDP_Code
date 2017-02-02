@@ -68,6 +68,7 @@ header {
             padding-bottom: 26px;
             @include tablet{
                 font-size:0.85rem;
+                margin: 0px 31px;
             }
             @include desktop {
                 padding: 0 12px 26px;

@@ -122,7 +122,8 @@ header {
     padding-bottom: 26px; }
     @media (min-width: 760px) {
       .boxes-container .boxes p {
-        font-size: 0.85rem; } }
+        font-size: 0.85rem;
+        margin: 0px 31px; } }
     @media (min-width: 1024px) {
       .boxes-container .boxes p {
         padding: 0 12px 26px;
