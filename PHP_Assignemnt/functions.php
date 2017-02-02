@@ -5,18 +5,17 @@
 ########################
 
 
-
 // read from "input.json" and return as an array
 function load_input_file_into_php_array() {
 $file_string = file_get_contents("/data/input.json");
 $file_array = json_decode($file_string, true);
-  print "Loading...\n";
   return $file_array;
-
+print "Loading...\n";
 
 }
 // convert array to match structure in "correct-output.json"
 function convert_array_to_output_format($input_array) {
+  $output_array = 
   print "Converting...\n";  
 
 
@@ -38,4 +37,3 @@ function save_php_array_to_output_file($output_array) {
 ###  Tip - Look at these built-in PHP functions:                     ###
 ###  json_encode, json_decode, file_put_contents, file_get_contents  ###
 ########################################################################
-
