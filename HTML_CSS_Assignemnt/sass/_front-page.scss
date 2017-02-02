@@ -12,15 +12,15 @@ header {
         }
     }
     p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         color: $font_color;
         line-height: $line_height_font;
         padding: 10px;
         font-weight: 100;
+        width: 89%;
+        margin:auto;
         @include tablet {
             width: 70%;
-            margin: auto;
-            font-size: 1.3rem;
         }
         @include desktop {
             width: 60%;
@@ -56,8 +56,14 @@ header {
         h3 {
             font-size: 0.85rem;
             margin: auto;
-            width: 183px;
+            width: 40%;
             line-height: 1.3rem;
+            @include tablet{
+                width:35%;
+            }
+            @include desktop{
+                width: 45%;
+            }
         }
         p {
             font-size: 0.8rem;
