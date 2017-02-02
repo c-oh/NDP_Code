@@ -20,19 +20,16 @@ header {
     }
 .boxes {
     text-align: center;
-    border-top: 1px solid $lightgray;
     height: 291px;
+    -webkit-box-shadow:
+     inset -1px 0   0 $lightgray,
+     inset 0 1px 0 $lightgray,
+     inset 0 -1px 0 $lightgray,;
     @include tablet{
         width: 50%;
-        -webkit-box-shadow:
-     inset -1px 0   0 $lightgray,
-     inset 0 -1px 0 $lightgray,;
     }
     @include desktop{
         width: 25%;
-     -webkit-box-shadow:
-     inset -1px 0   0 $lightgray,
-     inset 0 -1px 0 $lightgray,;
     }
     img {
         width: $img__size;
