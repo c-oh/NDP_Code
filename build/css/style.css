@@ -71,10 +71,11 @@ header {
 .boxes {
   text-align: center;
   border-top: 1px solid #d3d3d3;
-  height: 300px; }
+  height: 264px; }
   .boxes img {
     width: 150px;
-    height: 150px; }
+    height: 150px;
+    padding: 26px; }
   .boxes p {
     font-size: 0.8rem;
     color: #708090;

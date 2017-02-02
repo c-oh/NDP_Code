@@ -18,10 +18,11 @@ header {
 .boxes{
     text-align: center;
     border-top: 1px solid $lightgray;
-    height: 300px;
+    height: 264px;
 img{
     width: $img__size;
     height: $img__size;
+    padding: 26px;
 }
 p{
     font-size: 0.8rem;
