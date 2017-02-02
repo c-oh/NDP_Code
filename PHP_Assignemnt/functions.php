@@ -13,25 +13,27 @@ $file_string = file_get_contents("data/input.json");
 $file_array = json_decode($file_string, true);
 #Returning the variable will prevent a value of "null" showing up
   return $file_array;
+  #Prints out a message to the command line when function is excecuted
 print "Loading...\n";
 }
+
 // convert array to match structure in "correct-output.json"
 function convert_array_to_output_format($input_array) {
   #assigning a variable the value of an empty array, using PHP5.4's shortcut
   $output_array = [];
   #Assigning each bird a value
   $item = 0;
-  foreach($input_array['birds'] as &$birds){
+  foreach($input_array['birds'] as $birds){
     foreach($birds as $data){
        $output_array[$counter] = array(
         'name' => $data['EnglishName'],
         'latin' => $data['Species'],
         'lifespan' => $data['Lifespan']);
 }
-   
     #Post-incrementing the var so the function will keep on running until it reaches last object
-    $item++;
+         $item++;
   };
+  #Prints out a message to the command line when function is excecuted
   print "Converting...\n";  
   # Making something show up after the function is run
 $output = json_encode($output_array);
@@ -43,6 +45,7 @@ return $output;
 function save_php_array_to_output_file($output_array) {
   #This puts the contents of the var into the specified file
   file_put_contents('my-output.json', $output_array);
+  #Prints out a message to the command line when function is excecuted
   print "Saving...\n";    
 
 
