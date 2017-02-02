@@ -18,17 +18,17 @@ print "Loading...\n";
 // convert array to match structure in "correct-output.json"
 function convert_array_to_output_format($input_array) {
   #assigning a variable the value of an empty array, using PHP5.4's shortcut
-  $input_array = [];
+  $output_array = [];
   #Assigning each bird a value
   $item = 0;
   foreach($input_array['birds'] as &$birds){
-    foreach($birds as $data)[]
+    foreach($birds as $data){
        $output_array[$counter] = array(
         'name' => $data['EnglishName'],
         'latin' => $data['Species'],
-        'lifespan' => $data['Livespan']
-      );
+        'lifespan' => $data['Livespan']);
 }
+   
     #Post-incrementing the var so the function will keep on running until it reaches last object
     $item++;
   };
@@ -38,6 +38,7 @@ $output = json_encode($output_array);
 return $output;
 
 }
+
 // save the array to file named "my-output.json" 
 function save_php_array_to_output_file($output_array) {
   #This puts the contents of the var into the specified file
