@@ -6,11 +6,23 @@ header {
     border-bottom: solid 1px $lightgray;
     h1 {
         padding-bottom: 10px;
+        @include desktop{
+            font-size: 2rem;
+        }
     }
     p {
         font-size: 1rem;
         color: $font_color;
         line-height: $line_height_font;
+        @include tablet {
+            width: 70%;
+            margin: auto;
+            font-size: 1.3rem;
+        }
+        @include desktop{
+            width: 60%;
+            font-size: 1.5rem;
+        }
     }
 }
 
@@ -26,8 +38,8 @@ header {
         margin: 0 5px;
         @include tablet {
             width: 50%;
-            -webkit-box-shadow: inset -1px 0 0 $lightgray,;
-            margin:0;
+            -webkit-box-shadow: inset -1px 0 0 $lightgray, ;
+            margin: 0;
         }
         @include desktop {
             width: 25%;

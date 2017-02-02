@@ -63,10 +63,22 @@ header {
   border-bottom: solid 1px #d3d3d3; }
   header h1 {
     padding-bottom: 10px; }
+    @media (min-width: 1024px) {
+      header h1 {
+        font-size: 2rem; } }
   header p {
     font-size: 1rem;
     color: #808080;
     line-height: 1.6rem; }
+    @media (min-width: 760px) {
+      header p {
+        width: 70%;
+        margin: auto;
+        font-size: 1.3rem; } }
+    @media (min-width: 1024px) {
+      header p {
+        width: 60%;
+        font-size: 1.5rem; } }
 
 @media (min-width: 760px) {
   .boxes-container {
