@@ -45,7 +45,7 @@ table {
   font-family: 'open_sansregular';
   src: url("../../assets/fonts/OpenSans-Regular/OpenSans-Regular-webfont.eot");
   src: url("../../assets/fonts/OpenSans-Regular/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/OpenSans-Regular/OpenSans-Regular-webfont.woff") format("woff"), url("../../assets/fonts/OpenSans-Regular/OpenSans-Regular-webfont.ttf") format("truetype"), url("../../assets/fonts/OpenSans-Regular/OpenSans-Regular-webfont.svg#open_sansregular") format("svg");
-  font-weight: normal;
+  font-weight: 100;
   font-style: normal; }
 
 @font-face {
@@ -56,11 +56,13 @@ table {
   font-style: bold; }
 
 html {
-  background-color: #f1f2f2; }
+  background-color: #f1f2f2;
+  font-family: open_sansregular, sans-serif; }
 
 header {
   text-align: center;
-  font-size: 1.8rem; }
+  font-size: 1.6rem;
+  font-weight: 100; }
   header p {
     font-size: 1rem;
     color: #808080; }
@@ -72,5 +74,6 @@ header {
     width: 150px;
     height: 150px; }
   .boxes p {
-    font-size: 0.9rem;
-    color: #708090; }
+    font-size: 0.8rem;
+    color: #708090;
+    font-weight: 100; }

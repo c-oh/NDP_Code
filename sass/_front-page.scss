@@ -1,10 +1,12 @@
 html{
     background-color:$background;
+    font-family: $font__main;
 }
 
 header {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    font-weight:100;
     p {
         font-size: 1rem;
         color: $font_color;
@@ -19,7 +21,8 @@ img{
     height: $img__size;
 }
 p{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: $descriptiongray;
+    font-weight:100;
 }
 }
