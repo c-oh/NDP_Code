@@ -7,6 +7,7 @@
 
 // read from "input.json" and return as an array
 function load_input_file_into_php_array() {
+#This shows the file the directory of the data info
 $file_string = file_get_contents("/data/input.json");
 #Adding true will ensure objects are changed to associative arrays
 $file_array = json_decode($file_string, true);
